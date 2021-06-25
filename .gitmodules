@@ -1,0 +1,9 @@
+[submodule "schon"]
+	path = schon
+	url = https://github.com/gstonge/schon
+[submodule "horgg"]
+	path = horgg
+	url = https://github.com/gstonge/horgg
+[submodule "gcm"]
+	path = gcm
+	url = https://github.com/gstonge/gcm
