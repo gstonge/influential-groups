@@ -68,6 +68,6 @@ plt.xlabel(r"$\lambda$")
 plt.ylabel(r"Infected fraction $I^*$")
 plt.legend(frameon=False)
 plt.xlim(param_range)
-plt.savefig('../../paper/figs/Fig13.pdf')
+
 plt.show()
 

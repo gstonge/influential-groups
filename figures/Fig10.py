@@ -101,7 +101,6 @@ axes[2].text(0.12, 0.85, r'(c)', ha='center',
 axes[2].legend(frameon=False)
 
 
-plt.savefig('../../paper/figs/Fig9.pdf')
-# plt.show()
+plt.show()
 
 

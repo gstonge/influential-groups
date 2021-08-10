@@ -48,7 +48,6 @@ small_axes[-1].set_xticks([0,0.2,0.4,0.6,0.8,1])
 small_axes[0].text(0.25,1.38,r'Distribution $f_{n_\mathrm{max},i}$',fontsize=font_size,
                       transform=small_axes[0].transAxes)
 
-# plt.savefig('../../paper/figs/Fig11.pdf')
 plt.show()
 
 

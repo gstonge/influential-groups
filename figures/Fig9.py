@@ -104,8 +104,6 @@ axes[2].text(0.12, 1.1, r'(c) $\nu = 1.5,\; g_m = \delta_{m,10}$', ha='left',
             fontsize=font_size)
 
 
-
-plt.savefig('../../paper/figs/Fig9.pdf')
 plt.show()
 
 

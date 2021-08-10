@@ -79,7 +79,7 @@ axes[1].set_ylabel(r"Infected fraction $I^*$")
 axes[1].text(0.12, 0.85, r'(b)', ha='center',
              va='center', transform=axes[1].transAxes,
              fontsize=font_size)
-plt.savefig('../../paper/figs/Fig6.pdf')
+
 plt.show()
 
 

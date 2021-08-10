@@ -63,13 +63,13 @@ param_list_lower = np.linspace(lower_param,scale_c,2)
 I_list_lower = np.zeros(2)
 
 #plot
-plt.plot(param_list_upper,I_list_upper)
+plt.plot(param_list_upper,I_list_upper, label='Global')
 plt.plot(param_list_upper,In_list_upper[:,nmax],
          label=fr'$n = {nmax}$')
 plt.plot(param_list_upper,In_list_upper[:,2],
          label=fr'$n = 2$')
-plt.plot(param_list_upper,In_list_upper[:,2])
 plt.plot(param_list_lower,I_list_lower)
+plt.legend()
 plt.show()
 
 #output results

@@ -188,7 +188,6 @@ axes[2].text(0.84, 0.40, r'Endemic', ha='center',
              va='center', transform=axes[2].transAxes,
             fontsize=font_size)
 
-plt.savefig('../../paper/figs/Fig5.pdf')
 plt.show()
 
 

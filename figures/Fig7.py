@@ -67,8 +67,6 @@ axes[0].text(0.12, 0.85, r'(a)', ha='center',
              fontsize=font_size)
 
 
-
-plt.savefig('../../paper/figs/Fig7.pdf')
 plt.show()
 
 

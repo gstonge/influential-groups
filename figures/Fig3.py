@@ -105,5 +105,4 @@ for i,exp in enumerate(exp_list):
             ax.text(0.5, 1.1, case_label_list[j], ha='center',va='center',
                     transform=ax.transAxes,fontsize=font_size)
 
-plt.savefig('../../paper/figs/Fig3.pdf')
 plt.show()

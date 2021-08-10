@@ -117,7 +117,6 @@ small_axes[0].text(0.25,1.60,r'Distribution $f_{n,i}$',fontsize=font_size,
 small_axes[0].scatter(0.13,1.8, 80, marker='*',color='#1a1a1a',zorder=3,
                      clip_on=False)
 
-plt.savefig('../../paper/figs/Fig8.pdf')
-# plt.show()
+plt.show()
 
 

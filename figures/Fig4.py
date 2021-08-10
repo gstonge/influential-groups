@@ -83,6 +83,5 @@ axes[1].set_xlabel(r"$r$")
 axes[1].set_ylabel(r"$\mathcal{M}[\rho(r)]$")
 axes[1].text(0.,1.1, '(b) Tricritical points', transform=axes[1].transAxes,
             fontsize = font_size+2)
-plt.savefig('../../paper/figs/Fig4.pdf')
-# plt.show()
+plt.show()
 

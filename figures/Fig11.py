@@ -143,5 +143,4 @@ axes[0,0].plot(3, 0.01, 'D', color=marker_color,mfc='white',mew=1)
 axes[1,2].plot(0.25, 0.84, 'D', color=marker_color,
          transform=axes[1,2].transAxes,mfc='white',mew=1,zorder=10)
 
-plt.savefig('../../paper/figs/Fig11.pdf')
 plt.show()
