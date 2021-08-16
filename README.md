@@ -2,7 +2,7 @@
 
 Code associated with the paper: **Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs**.
 
-#Reference
+# Reference
 
 If you use this code, please consider citing:
 
