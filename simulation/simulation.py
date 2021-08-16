@@ -51,8 +51,8 @@ def experience(conf, initial_infected_fraction, quasi=True):
         graph_generator = horgg.BCMS(m_list,n_list)
         horgg.BCMS.seed(seed) #optional, if nothing is given, it is seeded with time
 
-        edge_list_list = [graph_generator.get_random_graph(nb_steps=len(orig_edge_list))
-                              for i in range(nb_graph)]
+        edge_list_list = [graph_generator.get_random_graph(
+            nb_steps=len(orig_edge_list)*factor) for i in range(nb_graph)]
 
     #get invasion threshold and bistability threshold
     shape = conf['shape_infection']

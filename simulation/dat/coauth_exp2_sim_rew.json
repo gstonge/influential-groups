@@ -12,7 +12,7 @@
  "nb_history": 50,
  "quasi_upper": false,
  "quasi_lower": false,
- "init_I_upper": 0.9,
+ "init_I_upper": 0.8,
  "burnin_dt": 100,
  "burnin_dec_dt": 1,
  "measure_dt": 10,

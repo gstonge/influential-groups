@@ -8,7 +8,7 @@
  "nb_graph":10,
  "seed": 42,
  "upper_branch": true,
- "lower_branch": false,
+ "lower_branch": true,
  "nb_history": 50,
  "quasi_upper": true,
  "quasi_lower": false,

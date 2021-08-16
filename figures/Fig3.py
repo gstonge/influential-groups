@@ -56,7 +56,10 @@ for i,exp in enumerate(exp_list):
                 transform=ax.transAxes,fontsize=font_size)
     axins = inset_axes(ax, width="45%", height="45%",borderpad=0)
 
-    ax.scatter(np.arange(mmax+1)[1:],gm[1:], 18, color='#1a1a1a')
+    ax.scatter(np.arange(mmax+1)[1:],gm[1:], 18, color='#b2b2b2')
+    pl_x = np.arange(6,150)
+    pl_y = 1.3*pl_x**(-2.3)
+    ax.plot(pl_x,pl_y, color='#1a1a1a', label=r"$m^{-2.3}$")
     ax.set_xscale('log')
     ax.set_yscale('log')
     ax.set_ylim([6*10**-6,20])
@@ -65,6 +68,7 @@ for i,exp in enumerate(exp_list):
     ax.set_xlabel("$m$")
     ax.text(0.12, 0.85, '(a)', ha='center',va='center',
             transform=ax.transAxes,fontsize=font_size)
+    ax.legend(frameon=False,loc='lower left')
 
 
     axins.bar(np.arange(nmax+1)[2:],pn[2:], facecolor="#41b6c4",

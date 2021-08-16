@@ -55,6 +55,12 @@ for i,exp in enumerate(exp_list):
         ax.errorbar(param_list_sim,sim_results['mean_I_list_upper'],
                      yerr=sim_results['std_I_list_upper'],
                      color="#7fcdbb", fmt='o', ms=5,elinewidth=1.)
+        if i > 0:
+            param_list_ame_unstable = np.array(
+                ame_results['param_list_unstable'])/ame_results['scale_c']
+            ax.plot(param_list_ame_unstable, ame_results['I_list_unstable'],
+                    color="#0c2c84", ls='--')
+
         if j == 2 and i > 0:
 
             ax.errorbar(param_list_sim,sim_results['mean_I_list_lower'],

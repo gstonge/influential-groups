@@ -50,10 +50,25 @@ stable_param,stable_fixed_point,stable_infected_fraction = \
                       rtol=10**(-12), max_iter=20000,
                       fixed_args=(shape,),Jtol=Jtol,verbose=False)
 
+#get the unstable branch
+if 'unstable' in conf and conf['unstable']:
+    param_var = abs(stable_param[-2]-stable_param[-1])
+    fni = stable_fixed_point[-1][1]
+    param_init = stable_param[-1]
+    unstable_param,unstable_fixed_point,unstable_infected_fraction = \
+            unstable_branch(fni,beta,state_meta,param_init,
+                            param_var,fixed_args=(shape,),init_iter=100,
+                            h=10**(-2),
+                            rtol=10**(-12),Jtol=Jtol,
+                            max_iter=10000, verbose=False)
+
+
 #reverse the direction
 param_list_upper = list(reversed(stable_param))
 I_list_upper = list(reversed(stable_infected_fraction))
 state_list_upper = list(reversed(stable_fixed_point))
+
+#get In for the upper branch
 In_list_upper = [np.zeros(nmax+1) for state in state_list_upper]
 for ind,state in enumerate(state_list_upper):
     for n in range(2,nmax+1):
@@ -63,13 +78,13 @@ param_list_lower = np.linspace(lower_param,scale_c,2)
 I_list_lower = np.zeros(2)
 
 #plot
-plt.plot(param_list_upper,I_list_upper, label='Global')
+plt.plot(param_list_upper,I_list_upper)
 plt.plot(param_list_upper,In_list_upper[:,nmax],
          label=fr'$n = {nmax}$')
 plt.plot(param_list_upper,In_list_upper[:,2],
          label=fr'$n = 2$')
+plt.plot(param_list_upper,In_list_upper[:,2])
 plt.plot(param_list_lower,I_list_lower)
-plt.legend()
 plt.show()
 
 #output results
@@ -79,6 +94,10 @@ results['param_list_lower'] = param_list_lower
 results['param_list_upper'] = param_list_upper
 results['I_list_upper'] = I_list_upper
 results['I_list_lower'] = I_list_lower
+if 'unstable' in conf and conf['unstable']:
+    results['param_list_unstable'] = unstable_param
+    results['I_list_unstable'] = unstable_infected_fraction
+
 
 with open(f"{args.dir}/{args.conf}.pk", 'wb') as filename:
     pickle.dump(results,filename)

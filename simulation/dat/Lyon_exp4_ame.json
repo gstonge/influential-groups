@@ -1,5 +1,6 @@
 {"dataset_dir": "socio_data/",
  "dataset": "thr3_LyonSchool",
+ "unstable": true,
  "shape_infection": 4,
  "lower_param": 0.01,
  "higher_param": 2}
