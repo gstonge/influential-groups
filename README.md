@@ -1,14 +1,15 @@
 # influential-groups
 
-Code associated with the paper: **Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs**.
+Code associated with the paper:<br>
+**Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs**.
 
 # Reference
 
 If you use this code, please consider citing:
 
-"[_Influential groups for seeding and sustaining hypergraph contagions_](https://arxiv.org/abs/2105.07092)" <br>
+"[_Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs_](https://www.nature.com/articles/s42005-021-00788-w)" <br>
 Guillaume St-Onge, Iacopo Iacopini, Vito Latora, Alain Barrat, Giovanni Petri, Antoine Allard, Laurent Hébert-Dufresne <br>
-arXiv:2105.07092
+Commun. Phys., **5**, 25 (2022)
 
 
 # Requirements
